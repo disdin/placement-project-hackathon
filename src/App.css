@@ -1,3 +1,9 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Gotham", Verdana, Geneva, Tahoma, sans-serif;
+}
 .App {
   text-align: center;
 }

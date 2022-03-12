@@ -1,3 +1,18 @@
 .base{
     background-image: none;
 }
+.home_first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid red; */
+    width: 75%;
+    height:20rem;
+}
+.home_first_heading{
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+.home_first_about{
+    font-size: 1rem;
+}

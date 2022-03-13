@@ -11,7 +11,7 @@
 	align-items: center;
 	gap: 30px;
 	justify-content: space-around;
-	
+	margin-top: 40px;
 }
 .home_mission--img {
 	border-top-left-radius: 400px;

@@ -5,7 +5,7 @@
 	align-items: center;
 	height: 6.5rem;
 	padding: 0 2rem;
-	position: fixed;
+	position: sticky;
 	background-color:  rgba(255, 255, 255, 0.9);
 	width: 100%;
 }
@@ -57,19 +57,18 @@
 	font-weight: bold;
 	display: inline-block;
 	border-radius: 500px;
-	height: 2rem;
 	width: 8rem;
 	border: 1px solid #ff941f;
 	padding: 5px;
 	transition: all 0.3s;
 	text-align: center;
 }
-.btn p{
+.btn span{
 	/* display: flex;
 	align-items: center;
 	justify-content: center; */
-	margin: auto auto;
-	padding: auto auto;
+	margin:auto auto; 
+	
 }
 .btn:hover,
 .btn:active {

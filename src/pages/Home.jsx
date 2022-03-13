@@ -8,13 +8,14 @@ const Home = () => {
       <div className="home_first_before"></div>
       <div className="home">
         <div className="home_first">
-          <div className="home_first_heading">
+          <div className="home_first_heading" >
             <span className="c1">Framing </span>
-            <span className="c2">solution for tackling </span>
-            <span className="c1"> the </span>
+            <span className="c2">solution for  </span>
+            <span className="c1">tackling </span>
+            {/* <span className="c1"> the </span> */}
             <span className="c2">unemployability </span>
             <span className="c1">in </span>
-            <span className="c2">the </span>
+            <span className="c1">the </span>
             <span className="c1">country</span>{" "}
           </div>
           {/* <div className="home_first_about">

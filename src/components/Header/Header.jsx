@@ -56,7 +56,7 @@ const Header = () => {
             </li>
             <li>
               <Link to="/" className="btn">
-                <p>Join Us</p>
+                <span >Join Us</span>
               </Link>
             </li>
           </ul>

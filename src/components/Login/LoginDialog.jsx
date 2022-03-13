@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 // import { authenticateSignup,authenticateLogin } from "../../service/api";
+import './LoginDialog.css'
 
 const useStyle = makeStyles({
   component: {
@@ -101,7 +102,7 @@ const accountInitialValues = {
   },
   loginStudent: {
     view: "loginStudent",
-    heading: "Student Login",
+    heading: "University Login",
     subHeading:
       "Find a perfect and flexible working environment among 1500+ registered firms",
   },
@@ -159,76 +160,77 @@ const LoginDialog = ({ Open, setOpen }) => {
 
   return (
     <Dialog open={Open} onClose={handleClose}>
-      <DialogContent className={classes.component}>
-        <Box style={{ display: "flex" }}>
-          <Box className={classes.image}>
-            <Typography
+      <DialogContent className='component'>
+        <div style={{ display: "flex" }}>
+          <div className='image'>
+            <p
               style={{
                 marginTop: -44,
                 textAlign: "center",
-                fontSize: 30,
+                fontSize: 28,
                 fontFamily: "cursive",
               }}
-              variant="h5"
             >
               {account.heading}
-            </Typography>
-          </Box>
+            </p>
+          </div>
           {account.view === "loginHiring" ? (
-            <Box className={classes.login}>
-              <Typography style={{ marginTop: 10, color: "#979391",fontWeight:'bold' }}>
+            <div className='login'>
+              <p style={{ marginTop: 10, color: "#979391",fontWeight:'bold' }}>
                 {account.subHeading}
-              </Typography>
+              </p>
               <TextField
                 onChange={(e) => onValueChange(e)}
                 name="username"
                 label="Enter email/Mobile number"
+                style={{margin:'12px 0px'}}
               />
               {error && (
-                <Typography className={classes.error}>
+                <p className='error'>
                   Please enter your company mail ID{" "}
-                </Typography>
+                </p>
               )}
               <TextField
                 onChange={(e) => onValueChange(e)}
                 name="password"
                 label="Enter password"
               />
-              <Typography className={classes.text}>
+              <p className='text'>
                 INDOplacements provides real recruitment drives with a unique
                 Pre-selection and unparallel credibility{" "}
-              </Typography>
-              <Button className={classes.loginbtn} onClick={() => loginUser()}>
+              </p>
+              <button className='loginbtn' onClick={() => loginUser()}>
                 Login
-              </Button>
-              <Typography
-                className={classes.text}
+              </button>
+              <p
+                className='text'
                 style={{ textAlign: "center" }}
               >
                 OR
-              </Typography>
-              <Button className={classes.requestbtn}>Request OTP</Button>
-              <Typography
-                className={classes.createText}
+              </p>
+              <button className='requestbtn'>Request OTP</button>
+              <p
+                className='createText'
                 onClick={() => toggleSignup()}
               >
                 Looking for a Job? Click here
-              </Typography>
-            </Box>
+              </p>
+            </div>
           ) : (
-            <Box className={classes.login}>
-              <Typography style={{ marginTop: 10, color: "#979391",fontWeight:'bold' }}>
+            <div className='login'>
+              <p style={{ marginTop: 10, color: "#979391",fontWeight:'bold' }}>
                 {account.subHeading}
-              </Typography>
+              </p>
               <TextField
                 onChange={(e) => onInputChange(e)}
                 name="username"
                 label="Enter email/Mobile number"
+                style={{margin:'12px 0px'}}
               />
               {error && (
-                <Typography className={classes.error}>
+                <p className='error'>
                   Please enter your student Email ID or Mobile number
-                </Typography>
+                </p>
               )}
 
               <TextField
@@ -236,30 +238,30 @@ const LoginDialog = ({ Open, setOpen }) => {
                 name="password"
                 label="Enter password"
               />
-              <Typography className={classes.text}>
+              <p className='text'>
                 INDOplacements provides a base of 1500+ firms where you can find
                 the perfect working experience for you{" "}
-              </Typography>
+              </p>
 
-              <Button className={classes.loginbtn} onClick={() => signupUser()}>
+              <button className='loginbtn' onClick={() => signupUser()}>
                 Login
-              </Button>
-              <Typography
-                className={classes.text}
+              </button>
+              <p
+                className='text'
                 style={{ textAlign: "center" }}
               >
                 OR
-              </Typography>
-              <Button className={classes.requestbtn}>Request OTP</Button>
-              <Typography
-                className={classes.createText}
+              </p>
+              <button className='requestbtn'>Request OTP</button>
+              <p
+                className='createText'
                 onClick={() => toggleLogin()}
               >
                 Want to hire the perfect candidate for your company? Click here
-              </Typography>
-            </Box>
+              </p>
+            </div>
           )}
-        </Box>
+        </div>
       </DialogContent>
     </Dialog>
   );

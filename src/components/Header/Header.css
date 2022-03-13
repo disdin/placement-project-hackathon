@@ -9,10 +9,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 7.5rem;
+	height: 6.5rem;
 	padding: 0 2rem;
 	position: fixed;
-	/* background-color:  rgba(255, 255, 255, 0.5); */
+	background-color:  rgba(255, 255, 255, 0.9);
 	width: 100%;
 }
 
@@ -68,7 +68,13 @@
 	transition: all 0.3s;
 	text-align: center;
 }
-
+.btn p{
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+	margin: auto auto;
+	padding: auto auto;
+}
 .btn:hover,
 .btn:active {
 	background-color: #fffefd;

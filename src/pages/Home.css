@@ -1,4 +1,6 @@
-
+.home{
+    width: 100%;
+}
 .home_first_before{
     background-image: url("../../public/mt1.jpg");
     /* border: 2px solid green; */
@@ -24,4 +26,11 @@
 }
 .home_first_about{
     font-size: 1rem;
+}
+/* .c1 {
+	color: rgb(251, 244, 137);
+} */
+.c2 {
+	/* color: #ff7700; */
+    color: #418eff;
 }

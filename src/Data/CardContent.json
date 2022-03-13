@@ -1,0 +1,30 @@
+[
+  {
+    "key": 1,
+    "url": "../images/photo1.jpg",
+    "genre": "education",
+    "heading": "Unique Pre-selection",
+    "paragraph": "A self-designed protocol that saves your time by filtering the best match for your requirements..."
+  },
+  {
+    "key": 2,
+    "url": "../images/photo2.jpg",
+    "genre": "education",
+    "heading": "1500+ Firms in colaboration",
+    "paragraph": "Our large base of organisations colabrating to make a bright future for you..."
+  },
+  {
+    "key": 3,
+    "url": "../images/photo3.jpg",
+    "genre": "recruitment",
+    "heading": "Truly Global Process",
+    "paragraph": "Over the years we have conducted hundreds of recruitment drives, but for us every recruitment..."
+  },
+  {
+    "key": 4,
+    "url": "../images/photo4.jpg",
+    "genre": "recruitment",
+    "heading": "Unparalleled Credibility",
+    "paragraph": "A track record of zero failures and 100% commitments honoured.\n\nWe've created..."
+  }
+]

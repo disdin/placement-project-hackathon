@@ -1,0 +1,13 @@
+.Home_about{
+    display: flex;
+    flex-direction: row;
+}
+.about_right{
+    display: inline-block;
+}
+.about_heading{
+    font-size: 3rem;
+}
+.about_para{
+    font-size: 1rem;
+}

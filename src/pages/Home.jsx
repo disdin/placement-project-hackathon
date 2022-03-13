@@ -4,8 +4,9 @@ import HomeWinning from "../components/Home/HomeWinning/HomeWinning";
 import "./Home.css";
 const Home = () => {
   return (
-    <div className="home">
-      <div className="home_first_before">
+    <>
+      <div className="home_first_before"></div>
+      <div className="home">
         <div className="home_first">
           <div className="home_first_heading">
             <span className="c1">Framing </span>
@@ -26,10 +27,10 @@ const Home = () => {
             policies for tackling the unemployability in the country.
           </div> */}
         </div>
+        <HomeAbout_Us />
+        <HomeWinning />
       </div>
-      <HomeAbout_Us />
-      <HomeWinning />
-    </div>
+    </>
   );
 };
 
